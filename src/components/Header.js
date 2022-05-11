@@ -36,6 +36,25 @@ const pages = [
   },
 ];
 
+// const pages = [
+//   {
+//     buttonName: "Contact Me",
+//     path: "Lin1ey.github.io/contact-me",
+//   },
+//   {
+//     buttonName: "Projects",
+//     path: "lin1ey.github.io/projects",
+//   },
+//   {
+//     buttonName: "About",
+//     path: "lin1ey.github.io/about",
+//   },
+//   {
+//     buttonName: "Home",
+//     path: "lin1ey.github.io/",
+//   },
+// ];
+
 const useStyles = makeStyles({
   button: {
     color: "white",
@@ -121,7 +140,8 @@ const Header = () => {
             key={page.buttonName}
             className={classes.button}
             onClick={handleCloseNavMenu}
-            href={page.path}
+            to={page.path}
+            component={Link}
           >
             {page.buttonName}
           </Button>
