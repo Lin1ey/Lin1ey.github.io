@@ -1,21 +1,12 @@
 import * as React from "react";
-import AppBar from "@material-ui/core/AppBar";
-import Box from "@material-ui/core/Box";
-import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
-import Typography from "@material-ui/core/Typography";
-import Menu from "@material-ui/core/Menu";
-import MenuIcon from "@material-ui/icons/Menu";
-import Container from "@material-ui/core/Container";
-import Avatar from "@material-ui/core/Avatar";
-import Button from "@material-ui/core/Button";
-import color from "@material-ui/core/colors";
-import Tooltip from "@material-ui/core/Tooltip";
-import MenuItem from "@material-ui/core/MenuItem";
-import AdbIcon from "@material-ui/icons/Adb";
-import { colors } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+
+import Button from "@mui/material/Button";
+
+import { makeStyles } from "@mui/styles";
 import { Link } from "react-router-dom";
+import { color } from "@mui/system";
 
 const pages = [
   {
@@ -133,15 +124,16 @@ const Header = () => {
             */
 
   return (
-    <AppBar position="sticky" style={{ minHeight: "70px" }}>
+    <AppBar position="sticky" style={{ minHeight: "70px", backgroundColor: '#2E3B55'}}>
       <Toolbar className={classes.toolbar}>
         {pages.map((page) => (
           <Button
             key={page.buttonName}
-            className={classes.button}
+            sx={{color: "white", fontSize: "1em"}}
             onClick={handleCloseNavMenu}
             to={page.path}
             component={Link}
+            // href={page.path}
           >
             {page.buttonName}
           </Button>
