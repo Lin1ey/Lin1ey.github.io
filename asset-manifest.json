@@ -1,11 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.8e9a9e98.js",
+    "main.js": "/static/js/main.9bbb41db.js",
     "static/js/787.ab907ef0.chunk.js": "/static/js/787.ab907ef0.chunk.js",
     "static/media/showcase_of_running_the_code.jpg": "/static/media/showcase_of_running_the_code.7ebf43665a23e16022fb.jpg",
     "static/media/coursewikilogonew.svg": "/static/media/coursewikilogonew.c52026bf640027a0072fb1e8e29197a5.svg",
-    "static/media/a.png": "/static/media/a.9699e440f02f5c65b321.png",
     "static/media/ExampleLog_Import.jpg": "/static/media/ExampleLog_Import.83f73c1e111c6e4cf63e.jpg",
     "static/media/ExampleLog_WhatIsAt.jpg": "/static/media/ExampleLog_WhatIsAt.4a76c4dafbd6bdb77e42.jpg",
     "static/media/Henrico_County_GIS.jpg": "/static/media/Henrico_County_GIS.88b752566c1283d7be12.jpg",
@@ -31,11 +30,11 @@
     "static/media/li_annie_result.PNG": "/static/media/li_annie_result.b7e5a75db5fcee707071.PNG",
     "index.html": "/index.html",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.8e9a9e98.js.map": "/static/js/main.8e9a9e98.js.map",
+    "main.9bbb41db.js.map": "/static/js/main.9bbb41db.js.map",
     "787.ab907ef0.chunk.js.map": "/static/js/787.ab907ef0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.8e9a9e98.js"
+    "static/js/main.9bbb41db.js"
   ]
 }
