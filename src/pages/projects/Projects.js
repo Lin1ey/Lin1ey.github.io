@@ -4,23 +4,15 @@ import { Link } from "react-router-dom";
 import {
   AppBar,
   Box,
-  Card,
-  CardContent,
   Container,
-  createTheme,
   Dialog,
-  Divider,
   Grid,
   IconButton,
-  List,
-  ListItem,
-  ListItemText,
   Slide,
   Toolbar,
   Typography,
 } from "@mui/material";
 import projectsData from "../../jsData/projectsData";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import IosShareIcon from "@mui/icons-material/IosShare";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -28,30 +20,12 @@ import CameraEnhanceIcon from "@mui/icons-material/CameraEnhance";
 import { makeStyles } from "@mui/styles";
 import color, {
   colorPalette,
-  buttonStyleBlack,
   buttonStyleBlue,
 } from "../../jsData/colors";
 import { useTheme } from "@emotion/react";
 import CloseIcon from "@mui/icons-material/Close";
 
 const useStyles = makeStyles({
-  button: {
-    "&.MuiButton-root": {
-      border: "2px black solid",
-      color: "black",
-      background: "#FFFFFF",
-    },
-    "&:hover": {
-      borderColor: "black",
-      color: "white",
-      bgColor: "#000000",
-    },
-    "&:active": {
-      boxShadow: "none",
-      backgroundColor: "red",
-    },
-  },
-
   projImg: {
     border: "2px solid gray",
     borderRadius: "2%",
@@ -95,8 +69,6 @@ function ScreenShotButton(props) {
         Images
       </Button>
       <Dialog
-        // maxWidth="xl"
-        // fullWidth
         fullScreen
         open={open}
         onClose={handleClose}
@@ -121,7 +93,7 @@ function ScreenShotButton(props) {
         </AppBar>
         <Grid container spacing={5} columnSpacing={5}>
           {screenshotArray.map((screenshot, index) => (
-            <Grid item key={index} md={columnSize} xs={columnSize} >
+            <Grid item key={index} md={columnSize} xs={columnSize}>
               <Box p={3} sx={{ boxShadow: 5, bgcolor: colorPalette.main }}>
                 <Typography align="center" variant="h4">
                   {screenshot.title}
@@ -177,7 +149,10 @@ function ProjectCard(props) {
         ))}
         <Box sx={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
           {project.hasScreenShots && (
-            <ScreenShotButton screenshots={project.screenShotLinks} columnSize={project.columnSize}/>
+            <ScreenShotButton
+              screenshots={project.screenShotLinks}
+              columnSize={project.columnSize}
+            />
           )}
           {project.hasDemo && (
             <ProjectButton

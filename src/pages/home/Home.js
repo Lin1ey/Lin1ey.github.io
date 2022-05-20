@@ -60,7 +60,6 @@ function Home(props) {
       <div id="contact-me">
         <ContactMe />
       </div>
-
       <ScrollTop {...props}>
         <Fab color="primary" size="small" aria-label="scroll back to top">
           <KeyboardArrowUpIcon />
