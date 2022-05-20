@@ -1,21 +1,41 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.587ab0e7.js",
+    "main.js": "/static/js/main.8e9a9e98.js",
     "static/js/787.ab907ef0.chunk.js": "/static/js/787.ab907ef0.chunk.js",
+    "static/media/showcase_of_running_the_code.jpg": "/static/media/showcase_of_running_the_code.7ebf43665a23e16022fb.jpg",
     "static/media/coursewikilogonew.svg": "/static/media/coursewikilogonew.c52026bf640027a0072fb1e8e29197a5.svg",
     "static/media/a.png": "/static/media/a.9699e440f02f5c65b321.png",
+    "static/media/ExampleLog_Import.jpg": "/static/media/ExampleLog_Import.83f73c1e111c6e4cf63e.jpg",
+    "static/media/ExampleLog_WhatIsAt.jpg": "/static/media/ExampleLog_WhatIsAt.4a76c4dafbd6bdb77e42.jpg",
     "static/media/Henrico_County_GIS.jpg": "/static/media/Henrico_County_GIS.88b752566c1283d7be12.jpg",
+    "static/media/ExampleLog_WhatIsIn.jpg": "/static/media/ExampleLog_WhatIsIn.96b9512ea906a0852897.jpg",
+    "static/media/ExampleLog_WorldBoundray.jpg": "/static/media/ExampleLog_WorldBoundray.7dcd69ffa589e2d10363.jpg",
+    "static/media/ExampleLog_WhatIs.jpg": "/static/media/ExampleLog_WhatIs.e7006a3bfef8189f50ad.jpg",
+    "static/media/Running_On_Terminal.JPG": "/static/media/Running_On_Terminal.9e14496f99664c4a4e50.JPG",
     "static/media/Title_Screen.PNG": "/static/media/Title_Screen.4528d4915eb2ea0ba371.PNG",
     "static/media/high-level-language-overview.PNG": "/static/media/high-level-language-overview.717e443138ec4cce7295.PNG",
+    "static/media/Sniper_Minigame_Game.PNG": "/static/media/Sniper_Minigame_Game.f539367f91e9eb60c3b1.PNG",
+    "static/media/ExampleScript_WhatIs_WhatIsAt.jpg": "/static/media/ExampleScript_WhatIs_WhatIsAt.604bb1410949b20a4b49.jpg",
+    "static/media/Sniper_Minigame_Prompt.PNG": "/static/media/Sniper_Minigame_Prompt.c3f9fc72769f64a109a2.PNG",
+    "static/media/ExampleScript_WhatIsIn_Quit.jpg": "/static/media/ExampleScript_WhatIsIn_Quit.7192c7d62669a388d8be.jpg",
+    "static/media/ExampleScript_Import_WorldBoundry.jpg": "/static/media/ExampleScript_Import_WorldBoundry.0dd3f8fadb00595da892.jpg",
+    "static/media/Game_Over_Screen.PNG": "/static/media/Game_Over_Screen.7c6e64cff06c5b3ab6a3.PNG",
+    "static/media/ExampleLog_Quit.jpg": "/static/media/ExampleLog_Quit.b45ee307498bd94f012f.jpg",
+    "static/media/Type_To_Prompt.PNG": "/static/media/Type_To_Prompt.b4e91d7324cdbc230baf.PNG",
+    "static/media/showcase_of_cleaning_up.PNG": "/static/media/showcase_of_cleaning_up.805b5ca394597e34938d.PNG",
+    "static/media/Type_To_Game.PNG": "/static/media/Type_To_Game.0fcd08289adcd82f0eeb.PNG",
     "static/media/Tower_of_Hanoi_img.PNG": "/static/media/Tower_of_Hanoi_img.663b06696b63a0501eb1.PNG",
+    "static/media/li_jose_result.PNG": "/static/media/li_jose_result.e799d629be41e7c61b01.PNG",
+    "static/media/ellen_rich_result.PNG": "/static/media/ellen_rich_result.2b565917b2e8d9e5faec.PNG",
+    "static/media/li_annie_result.PNG": "/static/media/li_annie_result.b7e5a75db5fcee707071.PNG",
     "index.html": "/index.html",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.587ab0e7.js.map": "/static/js/main.587ab0e7.js.map",
+    "main.8e9a9e98.js.map": "/static/js/main.8e9a9e98.js.map",
     "787.ab907ef0.chunk.js.map": "/static/js/787.ab907ef0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.587ab0e7.js"
+    "static/js/main.8e9a9e98.js"
   ]
 }
