@@ -1,6 +1,8 @@
+import { Card, CardActionArea } from '@mui/material';
 import React from 'react';
 
 function About() {
+
     return ( <div>About</div> );
 }
 

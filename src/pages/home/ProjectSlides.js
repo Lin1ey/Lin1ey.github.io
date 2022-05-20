@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Card,
   CardActionArea,
@@ -7,13 +8,15 @@ import {
   CardMedia,
   Grid,
   IconButton,
-  Link,
   Typography,
 } from "@mui/material";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { makeStyles } from "@mui/styles";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import color, {colorPalette, buttonStyleBlack,  buttonStyleBlue} from "../../jsData/colors";
+
 
 const useStyles = makeStyles({
   button: {
@@ -30,8 +33,8 @@ function ProjectSlides(props) {
   const projects = props.projects;
 
   return (
-    <div>
-      <Grid container spacing={2}>
+    <Box  bgcolor={colorPalette.light}>
+      <Grid container spacing={2} >
         <Grid item xs={2}>
           <IconButton
             className={classes.button}
@@ -49,37 +52,28 @@ function ProjectSlides(props) {
         </Grid>
         <Grid item xs={8}>
           <Card sx={{ maxWidth: "100%" }}>
-            <CardMedia
-              component="img"
-              height="500"
-              width="100%"
-              image={projects[index].projectImage}
-              alt="project image"
-            ></CardMedia>
-            <CardContent>
-              <Typography
-                align="center"
-                gutterBottom
-                variant="h5"
-                component="div"
-              >
-                {projects[index].projectName}
-              </Typography>
-              <Typography variant="body1" color="text.secondary">
-                {projects[index].projectDesc}
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button
-                className={classes.button}
-                variant="contained"
-                //component={Link}
-                //to={projects[index].projectLink}
-                href={projects[index].projectLink}
-              >
-                Details
-              </Button>
-            </CardActions>
+            <CardActionArea component={Link} to={projects[index].projectLink}>
+              <CardMedia
+                component="img"
+                height="500"
+                width="100%"
+                image={projects[index].projectImage}
+                alt="project image"
+              ></CardMedia>
+              <CardContent>
+                <Typography
+                  align="center"
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                >
+                  {projects[index].projectName}
+                </Typography>
+                <Typography variant="body1" color="text.secondary">
+                  {projects[index].projectDesc}
+                </Typography>
+              </CardContent>
+            </CardActionArea>
           </Card>
         </Grid>
         <Grid item xs={2}>
@@ -99,7 +93,7 @@ function ProjectSlides(props) {
         </Grid>
       </Grid>
       <br></br>
-    </div>
+    </Box>
   );
 }
 

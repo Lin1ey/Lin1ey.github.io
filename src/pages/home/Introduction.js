@@ -1,70 +1,53 @@
-import {
-  Box,
-  Container,
-  Divider,
-  Grid,
-  Typography,
-  Button,
-} from "@mui/material";
-import { makeStyles } from "@mui/styles";
+import { Box, Typography } from "@mui/material";
+import Button from "@mui/material/Button";
 import React from "react";
-import { Link } from "react-router-dom";
+import color, { colorPalette, buttonStyleBlue } from "../../jsData/colors";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import EmailIcon from "@mui/icons-material/Email";
 
-const useStyles = makeStyles({
-  button: {
-    color: "white",
-    fontSize: "1em",
-    // "&:hover": {
-    //   backgroundColor: "#545253",
-    // },
-  },
-  introTextButtonBox: {
-    display: "flex",
-    justifyContent: "space-evenly",
-  },
-});
+const buttonStyle = {
+  maxWidth: "125px",
+  maxHeight: "50px",
+  minWidth: "125px",
+  minHeight: "50px",
+};
 
 function Introduction(props) {
   return (
-    <Grid container spacing={2}>
-      <Grid item xs={4}>
-        <img src={props.aboutMe.myImage} height="100%" width="100%" />
-      </Grid>
-      <Grid item xs={8}>
-        <IntroductionText aboutMe={props.aboutMe} />
-      </Grid>
-    </Grid>
-  );
-}
-
-function IntroductionText(props) {
-  const classes = useStyles();
-
-  return (
-    <Box>
-      <Typography align="center" variant="h2">
+    <Box bgcolor={colorPalette.dark} p={10} px={20}>
+      <Typography
+        align="center"
+        variant="h3"
+        color={colorPalette.darkContrastText}
+      >
         {props.aboutMe.name}
       </Typography>
-      <Typography variant="h6">{props.aboutMe.introParagraphOne}</Typography>
-      <br></br>
-      <Typography variant="h6">{props.aboutMe.introParagraphTwo}</Typography>
-      <br></br>
-      <Box className={classes.introTextButtonBox}>
-        <Button
-          variant="contained"
-          to={props.aboutMe.pathToAbout}
-          component={Link}
+      <br />
+      <Typography
+        align="center"
+        variant="h4"
+        color={colorPalette.darkContrastText}
+      >
+        {props.aboutMe.shortDesc}
+      </Typography>
+      <br />
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
+        {/* <Button
+          startIcon={<GitHubIcon />}
+          variant="outlined"
+          sx={buttonStyleBlue}
+          style={buttonStyle}
         >
-          Learn more about me
+          GitHub
         </Button>
         <Button
-          variant="contained"
-          to={props.aboutMe.pathToProjects}
-          component={Link}
+          startIcon={<EmailIcon />}
+          variant="outlined"
+          sx={buttonStyleBlue}
+          style={buttonStyle}
         >
-          See My Projects
-        </Button>
-        
+          Email
+        </Button> */}
       </Box>
     </Box>
   );
