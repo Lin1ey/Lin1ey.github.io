@@ -11,11 +11,14 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 
+//Types
+import { AboutMeData } from '@/types/aboutme';
+
 //Services
 import DataService from '@/services/DataService';
 const dataService = new DataService()
 
-const aboutMeData = ref(null)
+const aboutMeData = ref<AboutMeData>(null)
 
 onMounted(() => {
     dataService.getAboutMeData().then((data) => {
