@@ -1,13 +1,37 @@
-<script setup lang="ts">
-</script>
-
 <template>
-  <div>HEADER + NAVBAR</div>
-  <div>ABOUT + LINKS</div>
-  <div>PROJECTS</div>
-  <div>FOOTER + LINKS</div>
+  <HeaderSection :navLink="getNavBarItems()" />
+  <main>
+    <AboutSection ref="aboutSection" />
+    <ProjectsSection ref="projectsSection" />
+  </main>
+  <FooterSection ref="footerSection" />
+
 </template>
 
-<style scoped>
+<script setup lang="ts">
+import { ref } from "vue"
 
-</style>
+// Components
+import HeaderSection from '@/components/HeaderSection.vue'
+import AboutSection from '@/components/AboutSection.vue'
+import ProjectsSection from '@/components/ProjectsSection.vue'
+import FooterSection from '@/components/FooterSection.vue'
+
+//Types
+import type { NavBarTab } from "./types/navbar";
+
+const aboutSection = ref(null);
+const projectsSection = ref(null);
+const footerSection = ref(null);
+
+const getNavBarItems = () => {
+  return [
+    { title: "About", sectionRef: aboutSection },
+    { title: "Projects", sectionRef: projectsSection },
+    { title: "Footer", sectionRef: footerSection },
+  ] as NavBarTab[];
+};
+
+</script>
+
+<style scoped></style>
