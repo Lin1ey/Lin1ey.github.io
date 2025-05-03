@@ -3,7 +3,7 @@
         <ul>
             <li class="link" v-for="(link, index) in linkData" :key="link.icon">
                 <a :href="link.link" target="_blank">
-                    <img :src="utils.getIcon(link.icon, false)">
+                    <img :src="utils.getIcon(link.icon, true)">
                 </a>
             </li>
         </ul>
@@ -37,6 +37,7 @@ onMounted(() => {
 Footer {
     display: flex;
     justify-content: center;
+    background-color: var(--primary);
 }
 
 ul {
