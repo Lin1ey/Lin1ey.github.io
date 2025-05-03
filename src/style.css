@@ -1,4 +1,18 @@
-body {
+* {
     margin: 0px;
     padding: 0px;
+}
+
+:root {
+    --primary: #1d2024;
+    --secondary: #e5e5e5;
+    --darkContrastText: #f5eeeb;
+
+    /* NAVBAR */
+    --active-nav-item: #bf1f1f;
+
+}
+
+section {
+    scroll-margin-top: 175px
 }
