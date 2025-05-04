@@ -34,11 +34,10 @@ section {
     display: flex;
     justify-content: center;
     background-color: var(--secondary);
-
+    padding: 48px 100px;
 }
 
 .about-me-card {
-    padding: 48px 0;
     white-space: pre-wrap;
     text-align: center;
     max-width: 650px;
@@ -51,6 +50,12 @@ section {
 
     h4 {
         font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        padding: 48px 24px;
     }
 }
 </style>
