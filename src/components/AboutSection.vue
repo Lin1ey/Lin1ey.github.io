@@ -33,6 +33,8 @@ onMounted(() => {
 section {
     display: flex;
     justify-content: center;
+    background-color: var(--secondary);
+
 }
 
 .about-me-card {

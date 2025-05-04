@@ -25,7 +25,7 @@ import { Ref, ref } from 'vue';
 import type { NavBarTab } from '@/types/navbar';
 import type { ComponentPublicInstance } from "vue";
 
-const active = ref(true)
+const active = ref(false)
 
 const props = defineProps({
   navLink: { type: Array<NavBarTab>, required: false, default: [] },
