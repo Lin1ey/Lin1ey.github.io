@@ -1,6 +1,8 @@
+@import url(https://db.onlinewebfonts.com/c/7139b134440535b110d912bfd5e6eca9?family=Equip+Cond+W03+Light);
 * {
     margin: 0px;
     padding: 0px;
+    font-family: "Equip Cond W03 Light";
 }
 
 :root {
