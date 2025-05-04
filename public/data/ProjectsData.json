@@ -1,7 +1,7 @@
 [
   {
     "title": "Type-Two",
-    "image": "Type_To_Game.png",
+    "image": "Title_Screen.PNG",
     "desc": "A minigame collection game created by a group of 5 for the VTGP Club GameJam for Spring 2019. Based and inspired by the game 'Wario Ware'.",
     "buttons": {
       "demo": "https://www.youtube.com/watch?v=VD5slyS43pI",
@@ -10,8 +10,8 @@
   },
   {
     "title": "CourseWiki",
-    "image": "something.png",
-    "desc": "line1\n\nline2",
+    "image": "coursewikilogonew.svg",
+    "desc": "A web application for Virginia Tech students that acts as an organizational and social tool for students and professors.",
     "buttons": {
       "demo": "",
       "live": "",
