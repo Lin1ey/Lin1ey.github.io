@@ -1,8 +1,9 @@
-@import url(https://db.onlinewebfonts.com/c/7139b134440535b110d912bfd5e6eca9?family=Equip+Cond+W03+Light);
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
     margin: 0px;
     padding: 0px;
-    font-family: "Equip Cond W03 Light";
+    font-family: "Fira Code", monospace;
+
 }
 
 :root {
@@ -11,10 +12,19 @@
     --darkContrastText: #f5eeeb;
 
     /* NAVBAR */
-    --active-nav-item: #bf1f1f;
+    --active-nav-item: #00c6e6;
 
+    --test1: #191e2b;
+    --test2: #00c6e6;
+    --test3: #253045;
+    --test4: #bfc0d1;
+
+    --color-primary: #00c6e6; /* Brand color */
+    --color-secondary: #191e2b; /* Header/footer */
+    --color-background: #253045; /* Main background */
+    --color-text: #bfc0d1; /* Panel/card background */
 }
 
 section {
-    scroll-margin-top: 175px
+    scroll-margin-top: 175px;
 }

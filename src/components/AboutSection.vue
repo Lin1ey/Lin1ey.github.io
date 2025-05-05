@@ -33,8 +33,9 @@ onMounted(() => {
 section {
     display: flex;
     justify-content: center;
-    background-color: var(--secondary);
+    background-color: var(--test3);
     padding: 48px 100px;
+    color: var(--test4);
 }
 
 .about-me-card {
@@ -50,6 +51,7 @@ section {
 
     h4 {
         font-size: 1.5em;
+        color: var(--test2)
     }
 }
 

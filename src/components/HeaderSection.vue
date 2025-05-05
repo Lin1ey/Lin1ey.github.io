@@ -48,7 +48,7 @@ li {
 }
 
 header {
-  background-color: var(--primary);
+  background-color: var(--test1);
   color: var(--darkContrastText);
   padding: 1rem 1.5rem;
   position: sticky;
@@ -75,6 +75,7 @@ header {
 
   a:hover {
     background-color: var(--active-nav-item);
+    color: var(--test1);
   }
 }
 

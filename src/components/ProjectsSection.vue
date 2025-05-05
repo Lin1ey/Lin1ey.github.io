@@ -63,7 +63,10 @@ onMounted(() => {
 
 <style scoped>
 section {
+    height: 1000px;
     padding: 50px 100px;
+    background-color: var(--test3);
+
 }
 
 .project-containers {
@@ -73,13 +76,11 @@ section {
 }
 
 .project-card {
-    border: black solid 2px;
+    border: var(--test4) solid 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--secondary);
-    border-radius: 8px;
-    box-shadow: 10px 10px 3px gray;
+    background-color: var(--test1);
 }
 
 .project-right {
@@ -92,10 +93,12 @@ section {
 
     h1 {
         font-size: 2rem;
+        color: var(--test2)
     }
 
     p {
         font-size: 1rem;
+        color: white
     }
 }
 
@@ -114,16 +117,16 @@ img {
         align-items: center;
         gap: 4px;
         text-decoration: none;
-        color: rgb(33, 150, 243);
+        color: white;
         padding: 4px 8px;
-        background-color: white;
-        border: 2px solid rgb(33, 150, 243);
-        border-radius: 8px;
+
+        border: 2px solid var(--test2);
     }
 
     a:hover {
-        background-color: rgb(33, 150, 243);
-        color: white;
+        background-color: var(--test2);
+        color: var(--test1) ;
+        border-color: var(--test2);
     }
 }
 
