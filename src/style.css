@@ -23,6 +23,9 @@
     --about-background-color: var(--color-background);
     --about-text-color: var(--color-light);
     --about-header-color: var(--color-primary);
+
+    /* FOOTER SECTION */
+    --footer-background-color: var(--color-secondary)
    
 }
 
