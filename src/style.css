@@ -7,22 +7,15 @@
 }
 
 :root {
-    --primary: #1d2024;
-    --secondary: #e5e5e5;
-    --darkContrastText: #f5eeeb;
-
-    /* NAVBAR */
-    --active-nav-item: #00c6e6;
-
-    --test1: #191e2b;
-    --test2: #00c6e6;
-    --test3: #253045;
-    --test4: #bfc0d1;
-
     --color-primary: #00c6e6; /* Brand color */
     --color-secondary: #191e2b; /* Header/footer */
     --color-background: #253045; /* Main background */
-    --color-text: #bfc0d1; /* Panel/card background */
+    --color-light: #bfc0d1; /* Light color that contrasts wit the background */
+
+    /* NAVBAR */
+    --active-nav-item: var(--color-primary);
+
+   
 }
 
 section {

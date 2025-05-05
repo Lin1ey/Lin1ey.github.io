@@ -65,7 +65,7 @@ onMounted(() => {
 section {
     height: 1000px;
     padding: 50px 100px;
-    background-color: var(--test3);
+    background-color: var(--color-background);
 
 }
 
@@ -76,11 +76,11 @@ section {
 }
 
 .project-card {
-    border: var(--test4) solid 3px;
+    border: var(--color-light) solid 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--test1);
+    background-color: var(--color-secondary);
 }
 
 .project-right {
@@ -93,7 +93,7 @@ section {
 
     h1 {
         font-size: 2rem;
-        color: var(--test2)
+        color: var(--color-primary)
     }
 
     p {
@@ -120,13 +120,13 @@ img {
         color: white;
         padding: 4px 8px;
 
-        border: 2px solid var(--test2);
+        border: 2px solid var(--color-primary);
     }
 
     a:hover {
-        background-color: var(--test2);
-        color: var(--test1) ;
-        border-color: var(--test2);
+        background-color: var(--color-primary);
+        color: var(--color-secondary) ;
+        border-color: var(--color-primary);
     }
 }
 

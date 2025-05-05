@@ -37,7 +37,7 @@ onMounted(() => {
 Footer {
     display: flex;
     justify-content: center;
-    background-color: var(--test1);
+    background-color: var(--color-secondary);
 }
 
 ul {
