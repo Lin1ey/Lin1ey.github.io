@@ -19,6 +19,10 @@
     --active-nav-item-color: var(--color-secondary);
     --hamburger-menu-color: var(--color-light);
 
+    /* ABOUT SECTION */
+    --about-background-color: var(--color-background);
+    --about-text-color: var(--color-light);
+    --about-header-color: var(--color-primary);
    
 }
 
