@@ -48,8 +48,8 @@ li {
 }
 
 header {
-  background-color: var(--color-secondary);
-  color: var(--darkContrastText);
+  background-color: var(--header-background-color);
+  color: var(--header-text-color);
   padding: 1rem 1.5rem;
   position: sticky;
   top: 0;
@@ -74,8 +74,8 @@ header {
   }
 
   a:hover {
-    background-color: var(--active-nav-item);
-    color: var(--color-secondary);
+    background-color: var(--active-nav-item-background-color);
+    color: var(--active-nav-item-color);
   }
 }
 
@@ -90,7 +90,7 @@ header {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: var(--darkContrastText);
+  background-color: var(--hamburger-menu-color);
 }
 
 @media only screen and (max-width: 768px) {
@@ -112,7 +112,7 @@ header {
   .navbar-toggle {
     display: block;
     cursor: pointer;
-    background-color: var(--primary);
+    background-color: inherit;
     color: inherit;
     border: none;
   }

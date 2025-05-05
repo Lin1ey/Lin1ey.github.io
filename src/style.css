@@ -12,8 +12,12 @@
     --color-background: #253045; /* Main background */
     --color-light: #bfc0d1; /* Light color that contrasts wit the background */
 
-    /* NAVBAR */
-    --active-nav-item: var(--color-primary);
+    /* HEADER SECTION */
+    --header-background-color: var(--color-secondary);
+    --header-text-color: var(--color-light);
+    --active-nav-item-background-color: var(--color-primary);
+    --active-nav-item-color: var(--color-secondary);
+    --hamburger-menu-color: var(--color-light);
 
    
 }
