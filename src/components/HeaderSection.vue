@@ -2,7 +2,9 @@
   <Header>
     <nav class="navbar">
       <div class="navbar-header">
-        <h1>Brian Nguyen</h1>
+        <a v-if="props.navLink" @click.prevent="jumpToSection(aboutSection.sectionRef)">
+          <h1>Brian Nguyen</h1>
+        </a>
         <button class="navbar-toggle" @click="onClickNavbarToggle">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -21,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { Ref, ref } from 'vue';
+import { computed, Ref, ref } from 'vue';
 import type { NavBarTab } from '@/types/navbar';
 import type { ComponentPublicInstance } from "vue";
 
@@ -30,6 +32,10 @@ const active = ref(false)
 const props = defineProps({
   navLink: { type: Array<NavBarTab>, required: false, default: [] },
 });
+
+const aboutSection = computed(() => {
+  return props.navLink.filter(tab => tab.title === 'About')[0]
+})
 
 const jumpToSection = (section: Ref<ComponentPublicInstance | null>) => {
   section.value.$el.scrollIntoView({ behavior: "smooth" });
