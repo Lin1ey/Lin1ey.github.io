@@ -24,8 +24,22 @@
     --about-text-color: var(--color-light);
     --about-header-color: var(--color-primary);
 
+    /* PROJECT SECTION */
+    --project-background-color: var(--color-background);
+
+    --project-card-background-color: var(--color-secondary);
+    --project-card-header-color: var(--color-primary);
+
+    --project-card-text-color: var(--color-light);
+
+    --project-card-button-text-color: var(--color-light);
+    --project-card-button-border-color: var(--color-primary);
+    --project-card-button-background-hover-color: var(--color-primary);
+    --project-card-button-text-hover-color: var(--color-secondary);
+    --project-card-button-border-hover-color: var(--color-primary);
+
     /* FOOTER SECTION */
-    --footer-background-color: var(--color-secondary)
+    --footer-background-color: var(--color-secondary);
    
 }
 

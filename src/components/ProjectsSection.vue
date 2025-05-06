@@ -65,7 +65,7 @@ onMounted(() => {
 section {
     height: 1000px;
     padding: 50px 100px;
-    background-color: var(--color-background);
+    background-color: var(--project-background-color);
 
 }
 
@@ -80,7 +80,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--color-secondary);
+    background-color: var(--project-card-background-color);
 }
 
 .project-right {
@@ -93,12 +93,12 @@ section {
 
     h1 {
         font-size: 2rem;
-        color: var(--color-primary)
+        color: var(--project-card-header-color)
     }
 
     p {
         font-size: 1rem;
-        color: white
+        color: var(--project-card-text-color)
     }
 }
 
@@ -117,16 +117,15 @@ img {
         align-items: center;
         gap: 4px;
         text-decoration: none;
-        color: white;
+        color: var(--project-card-button-text-color);
         padding: 4px 8px;
-
-        border: 2px solid var(--color-primary);
+        border: 2px solid var(--project-card-button-border-color);
     }
 
     a:hover {
-        background-color: var(--color-primary);
-        color: var(--color-secondary) ;
-        border-color: var(--color-primary);
+        background-color: var(--project-card-button-background-hover-color);
+        color: var(--project-card-button-text-hover-color);
+        border-color: var(--project-card-button-border-hover-color);
     }
 }
 
