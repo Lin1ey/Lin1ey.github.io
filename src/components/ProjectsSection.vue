@@ -2,10 +2,10 @@
     <section>
         <div class="project-containers">
             <div class="project-card" v-for="(project, index) in projectsData" :key="index">
-                <div class="project-left">
+                <div class="project-top">
                     <img :src='getProjectImage(project.title, project.image)' />
                 </div>
-                <div class="project-right">
+                <div class="project-bottom">
                     <h1>{{ project.title }}</h1>
                     <p>{{ project.desc }}</p>
                     <div class="project-buttons">
@@ -72,6 +72,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
+    justify-items: center;
 }
 
 .project-card {
@@ -82,7 +83,12 @@ section {
     background-color: var(--project-card-background-color);
 }
 
-.project-right {
+.project-top {
+    width: 300px;
+    height: 300px;
+}
+
+.project-bottom {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -102,8 +108,8 @@ section {
 }
 
 img {
-    width: 250px;
-    height: 150px;
+    width: 100%;
+    height:100%;
 }
 
 .project-buttons {
@@ -146,7 +152,7 @@ img {
         grid-template-columns: 1fr 1fr;
     }
 
-    img {
+    .project-top {
         width: 280px;
         height: 175px;
     }
@@ -161,7 +167,7 @@ img {
         grid-template-columns: 1fr;
     }
 
-    img {
+    .project-top {
         width: 280px;
         height: 175px;
     }
