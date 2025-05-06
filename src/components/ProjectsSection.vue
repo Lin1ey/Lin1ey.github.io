@@ -63,7 +63,6 @@ onMounted(() => {
 
 <style scoped>
 section {
-    height: 1000px;
     padding: 50px 100px;
     background-color: var(--project-background-color);
 
@@ -71,7 +70,7 @@ section {
 
 .project-containers {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
 }
 
@@ -129,16 +128,32 @@ img {
     }
 }
 
-@media only screen and (min-width: 1300px) {
-    img {
-        width: 450px;
-        height: 250px;
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .project-containers {
+        grid-template-columns: 1fr 1fr;
+    }
+    section {
+        padding: 50px 36px;
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 426px) and (max-width: 768px) {
     section {
-        height: 1000px;
+        padding: 50px 18px;
+    }
+
+    .project-containers {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    img {
+        width: 280px;
+        height: 175px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 425px)  {
+    section {
         padding: 50px 18px;
     }
 
