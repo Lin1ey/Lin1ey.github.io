@@ -81,6 +81,7 @@ section {
     flex-direction: column;
     align-items: center;
     background-color: var(--project-card-background-color);
+    width: 100%;
 }
 
 .project-top {
