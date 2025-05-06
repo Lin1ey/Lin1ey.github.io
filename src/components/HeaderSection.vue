@@ -53,6 +53,10 @@ li {
   list-style: none;
 }
 
+a {
+  cursor: pointer;
+}
+
 header {
   background-color: var(--header-background-color);
   color: var(--header-text-color);
@@ -74,7 +78,6 @@ header {
   gap: 16px;
 
   a {
-    cursor: pointer;
     padding: 8px;
     border-radius: 8px;
   }
