@@ -92,9 +92,9 @@ section {
 .project-bottom {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 32px;
     text-align: center;
-    padding: 8px;
+    padding: 24px;
     line-height: 1.5rem;
 
     h1 {
@@ -171,6 +171,9 @@ img {
     .project-top {
         width: 280px;
         height: 175px;
+    }
+    .project-bottom {
+        padding: 12px;
     }
 }
 </style>
