@@ -8,6 +8,7 @@
         <div class="about-me-card">
             <img class="about-img" src="/images/bweeeh_amiya.jpg" />
             <h4>{{ aboutMeData.title }}</h4>
+            <br/>
             <p>{{ aboutMeData.description }}</p>
         </div>
     </section>
@@ -84,6 +85,7 @@ section {
     .section-title {
         font-size: 2rem;
     }
+
 }
 
 @media only screen and (min-width: 0px) and (max-width: 425px) {
