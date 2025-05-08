@@ -4,7 +4,7 @@
     <AboutSection ref="aboutSection" />
     <ProjectsSection ref="projectsSection" />
   </main>
-  <FooterSection ref="footerSection" />
+  <FooterSection />
 
 </template>
 
@@ -22,13 +22,11 @@ import type { NavBarTab } from "./types/navbar";
 
 const aboutSection = ref(null);
 const projectsSection = ref(null);
-const footerSection = ref(null);
 
 const getNavBarItems = () => {
   return [
     { title: "About", sectionRef: aboutSection },
-    { title: "Projects", sectionRef: projectsSection },
-    { title: "Footer", sectionRef: footerSection },
+    { title: "Projects", sectionRef: projectsSection }
   ] as NavBarTab[];
 };
 
