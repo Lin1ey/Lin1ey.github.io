@@ -12,12 +12,20 @@
     --color-background: #253045; /* Main background */
     --color-light: #bfc0d1; /* Light color that contrasts wit the background */
 
+    /* GENERAL SECTION STUFF */
+    --section-title-end-color: var(--color-primary);
+    --section-title-middle-color: var(--color-light);
+
     /* HEADER SECTION */
     --header-background-color: var(--color-secondary);
     --header-text-color: var(--color-light);
+
     --active-nav-item-background-color: var(--color-primary);
     --active-nav-item-color: var(--color-secondary);
+
     --hamburger-menu-color: var(--color-light);
+
+    --navitem-number-color: var(--color-primary);
 
     /* ABOUT SECTION */
     --about-background-color: var(--color-background);
@@ -44,5 +52,5 @@
 }
 
 section {
-    scroll-margin-top: 175px;
+    scroll-margin-top: 150px;
 }

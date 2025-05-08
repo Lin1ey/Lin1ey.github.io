@@ -1,5 +1,10 @@
 <template>
     <section>
+        <div class="section-title">
+            <div class="section-title-ends">----02.</div>
+            <div class="section-title-middle">Projects</div>
+            <div class="section-title-ends">----</div>
+        </div>
         <div class="project-containers">
             <div class="project-card" v-for="(project, index) in projectsData" :key="index">
                 <div class="project-top">
@@ -65,7 +70,24 @@ onMounted(() => {
 section {
     padding: 50px 100px;
     background-color: var(--project-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
 
+.section-title {
+
+    .section-title-ends {
+        color: var(--color-primary);
+    }
+
+    .section-title-middle {
+        color: var(--color-light)
+    }
+
+    font-size: 3rem;
+    display: flex;
 }
 
 .project-containers {
@@ -110,7 +132,7 @@ section {
 
 img {
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 
 .project-buttons {
@@ -139,6 +161,7 @@ img {
     .project-containers {
         grid-template-columns: 1fr 1fr;
     }
+
     section {
         padding: 50px 36px;
     }
@@ -157,11 +180,19 @@ img {
         width: 280px;
         height: 175px;
     }
+
+    .section-title {
+        font-size: 2rem;
+    }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 425px)  {
+@media only screen and (min-width: 0px) and (max-width: 425px) {
     section {
         padding: 50px 18px;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
     }
 
     .project-containers {
@@ -172,6 +203,7 @@ img {
         width: 280px;
         height: 175px;
     }
+
     .project-bottom {
         padding: 12px;
     }

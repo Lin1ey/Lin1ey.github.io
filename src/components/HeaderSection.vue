@@ -14,7 +14,7 @@
       <ul class="navmenu" :class="{ inactive: !active }">
         <li v-for="(nav, index) in props.navLink" :key="index">
           <a role="button" @click.prevent="jumpToSection(nav.sectionRef)">
-            {{ nav.title }}
+            <span class="navitem-number">0{{ index + 1 }}.</span> <span>{{ nav.title }}</span>
           </a>
         </li>
       </ul>
@@ -55,6 +55,9 @@ li {
 
 a {
   cursor: pointer;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 header {
@@ -86,6 +89,11 @@ header {
     background-color: var(--active-nav-item-background-color);
     color: var(--active-nav-item-color);
   }
+}
+
+.navitem-number {
+  color: var(--navitem-number-color);
+  font-size: 1.2em;
 }
 
 .navbar-toggle {
