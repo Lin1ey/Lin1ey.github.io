@@ -2,7 +2,8 @@
     <Footer>
         <ul>
             <li class="link" v-for="(link, index) in linkData" :key="link.icon">
-                <a :href="link.link" target="_blank">
+                <a :href="link.icon === 'email' ? `mailto:${link.link}` : link.link" target="_blank"
+                    :title="capitalizeFirstLetter(link.icon)">
                     <img :src="utils.getIcon(link.icon, true)">
                 </a>
             </li>
@@ -24,7 +25,11 @@ const dataService = new DataService()
 const utils = new Utils()
 
 
-const linkData = ref < LinkData[] > (null)
+const linkData = ref<LinkData[]>(null)
+
+const capitalizeFirstLetter = (val: string) => {
+    return String(val).charAt(0).toUpperCase() + String(val).slice(1);
+}
 
 onMounted(() => {
     dataService.getLinksData().then((data) => {
@@ -45,6 +50,7 @@ ul {
     list-style: none;
     padding: 0px;
     margin: 0px;
+
     li {
         padding: 8px;
     }
