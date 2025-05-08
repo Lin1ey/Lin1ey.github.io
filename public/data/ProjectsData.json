@@ -1,21 +1,19 @@
 [
   {
-    "title": "Type-Two",
-    "image": "Title_Screen.PNG",
-    "desc": "A minigame collection game created by a group of 5 for the VTGP Club GameJam for Spring 2019. Based and inspired by the game 'Wario Ware'.",
+    "title": "CourseWiki",
+    "image": "CourseWikiLogo.svg",
+    "desc": "A React based web application for Virginia Tech students that acts as an organizational and social tool for students and professors.",
     "buttons": {
-      "demo": "https://www.youtube.com/watch?v=VD5slyS43pI",
-      "code": "https://github.com/Lin1ey/Type-Two"
+      "demo": "https://www.youtube.com/playlist?list=PL7rRfcJDHzQUdjniKR3nRdy3l8wkObn4F"
     }
   },
   {
-    "title": "CourseWiki",
-    "image": "coursewikilogonew.svg",
-    "desc": "A web application for Virginia Tech students that acts as an organizational and social tool for students and professors.",
+    "title": "Type-Two",
+    "image": "TitleScreen.PNG",
+    "desc": "A Unity based minigame collection game created by a group of 5 for the VTGP Club GameJam for Spring 2019. Based and inspired by the game \"Wario Ware\".",
     "buttons": {
-      "demo": "",
-      "live": "",
-      "code": ""
+      "demo": "https://www.youtube.com/watch?v=VD5slyS43pI",
+      "code": "https://github.com/Lin1ey/Type-Two"
     }
   }
 ]
