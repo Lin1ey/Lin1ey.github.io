@@ -63,7 +63,7 @@ section {
 .about-me-card {
     white-space: pre-wrap;
     text-align: center;
-    max-width: 650px;
+    max-width: 950px;
 
     .about-img {
         width: 128px;
