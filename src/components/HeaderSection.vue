@@ -88,6 +88,10 @@ header {
   a:hover {
     background-color: var(--active-nav-item-background-color);
     color: var(--active-nav-item-color);
+
+    .navitem-number {
+      color: var(--color-light);
+    }
   }
 }
 
@@ -95,6 +99,8 @@ header {
   color: var(--navitem-number-color);
   font-size: 1.2em;
 }
+
+
 
 .navbar-toggle {
   display: none;
