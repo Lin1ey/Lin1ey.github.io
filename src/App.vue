@@ -3,6 +3,7 @@
   <main>
     <AboutSection ref="aboutSection" />
     <ProjectsSection ref="projectsSection" />
+    <ContactSection ref="contactSection" />
   </main>
   <FooterSection />
 
@@ -15,6 +16,7 @@ import { ref } from "vue"
 import HeaderSection from '@/components/HeaderSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
 import ProjectsSection from '@/components/ProjectsSection.vue'
+import ContactSection from "./components/ContactSection.vue"
 import FooterSection from '@/components/FooterSection.vue'
 
 //Types
@@ -22,11 +24,13 @@ import type { NavBarTab } from "./types/navbar";
 
 const aboutSection = ref(null);
 const projectsSection = ref(null);
+const contactSection = ref(null)
 
 const getNavBarItems = () => {
   return [
     { title: "About", sectionRef: aboutSection },
-    { title: "Projects", sectionRef: projectsSection }
+    { title: "Projects", sectionRef: projectsSection },
+    { title: "Contact", sectionRef: contactSection }
   ] as NavBarTab[];
 };
 
