@@ -1,6 +1,7 @@
-import { AboutMeData } from "@/types/aboutme";
-import { LinkData } from "@/types/links";
-import { ProjectData } from "@/types/projects";
+import { AboutMeData } from "@/types/aboutme.js";
+import { LinkData } from "@/types/links.js";
+import { ProjectData } from "@/types/projects.js";
+
 
 export default class DataService {
   async getAboutMeData(): Promise<AboutMeData> {

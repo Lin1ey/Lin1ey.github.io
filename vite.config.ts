@@ -9,5 +9,11 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src/"),
     },
   },
+  base: '/',
+  // root: 'src',
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+  },
   plugins: [vue()],
 });
