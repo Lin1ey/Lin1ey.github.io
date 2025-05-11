@@ -6,7 +6,7 @@
             <div class="section-title-ends">----</div>
         </div>
         <div class="about-me-card">
-            <img class="about-img" src="/images/me.jpg" />
+            <img class="about-img" src="/images/me.jpg" alt="Brian Nguyen"/>
             <h4>{{ aboutMeData.title }}</h4>
             <br/>
             <p>{{ aboutMeData.description }}</p>

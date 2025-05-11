@@ -8,7 +8,7 @@
         <div class="project-containers">
             <div class="project-card" v-for="(project, index) in projectsData" :key="index">
                 <div class="project-top">
-                    <img :src='getProjectImage(project.title, project.image)' />
+                    <img :src='getProjectImage(project.title, project.image)' :alt="project.title" />
                 </div>
                 <div class="project-bottom">
                     <h1>{{ project.title }}</h1>
