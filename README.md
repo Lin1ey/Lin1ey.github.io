@@ -1,5 +1,21 @@
-# Vue 3 + TypeScript + Vite
+# Overview
+Personal portfolio for Brian Nguyen! Made with Vue 3 + TypeScript + Vite
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# Commands
+- `dev`: start the development server
+- `build`: build the project to /dist
+- `preview`: start local web server that serves the latest build from /dist
+- `build-push`: commits and pushes the dist folder
+- `git-pages-deploy`: update the gh-pages branch where the git pages lives
+- `build-deploy`: builds, pushes, and deploys the dist folder. `build` & `build-push` & `git-pages-deploy`
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+
+ # Updating github pages
+ Note: you can skip step 2-4 with `npm run build-deploy`
+ 
+ 1. Make changes/updates
+ 2. build with `npm run build`
+ 3. push dist along with changes
+ 4. run `git subtree push --prefix dist origin gh-pages` or `npm run git-pages-deploy`
+
+
