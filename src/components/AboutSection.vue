@@ -6,7 +6,7 @@
             <div class="section-title-ends">----</div>
         </div>
         <div class="about-me-card">
-            <img class="about-img" src="/images/bweeeh_amiya.jpg" />
+            <img class="about-img" src="/images/me.jpg" />
             <h4>{{ aboutMeData.title }}</h4>
             <br/>
             <p>{{ aboutMeData.description }}</p>
@@ -66,8 +66,8 @@ section {
     max-width: 950px;
 
     .about-img {
-        width: 128px;
-        height: 128px;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
     }
 
