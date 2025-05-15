@@ -4,7 +4,7 @@
             <li class="link" v-for="(link, index) in linkData" :key="link.icon">
                 <a :href="link.icon === 'email' ? `mailto:${link.link}` : link.link" target="_blank"
                     :title="capitalizeFirstLetter(link.icon)">
-                    <img :src="utils.getIcon(link.icon, true)">
+                    <img :src="utils.getIcon(link.icon, true)" :alt="link.icon">
                 </a>
             </li>
         </ul>
