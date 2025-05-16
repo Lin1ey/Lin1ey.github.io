@@ -6,5 +6,6 @@ export type ProjectData = {
         demo: string | null,
         code: string | null,
         live: string | null
-    }
+    },
+    tools: string[]
 }

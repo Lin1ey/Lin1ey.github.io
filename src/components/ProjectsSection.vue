@@ -13,6 +13,12 @@
                 <div class="project-bottom">
                     <h1>{{ project.title }}</h1>
                     <p>{{ project.desc }}</p>
+                    <div class="project-tools">
+                        <ul>
+                            <li v-for="(tool, index) in project.tools" :title="utils.capitalizeFirstLetter(tool)"><img
+                                    :src="utils.getIcon(tool, false)" :alt="tool"></li>
+                        </ul>
+                    </div>
                     <div class="project-buttons">
                         <a v-if="project.buttons.demo" :href="project.buttons.demo" target="_blank"><svg
                                 stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
@@ -51,7 +57,11 @@ import { ProjectData } from '@/types/projects';
 
 //Services
 import DataService from '@/services/DataService';
+import Utils from '@/services/Utils';
+
 const dataService = new DataService()
+const utils = new Utils()
+
 
 const getProjectImage = (title: string, image: string) => {
     return `/images/${title}/${image}`
@@ -134,6 +144,27 @@ img {
     width: 100%;
     height: 100%;
 }
+
+.project-tools {
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px;
+
+        li {
+            padding: 8px;
+
+            img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+}
+
+
 
 .project-buttons {
     display: flex;
