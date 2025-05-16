@@ -1,12 +1,22 @@
 [
   {
+    "title": "Portfolio",
+    "image": "portfolio.png",
+    "desc": "This very website you're on! Simple web application made with Vue3 + Typescript + Vite",
+    "buttons": {
+      "live": "https://lin1ey.github.io/",
+      "code": "https://github.com/Lin1ey/Lin1ey.github.io"
+    },
+    "tools": ["vue", "typescript", "vite"]
+  },
+  {
     "title": "CourseWiki",
     "image": "CourseWikiLogo.svg",
     "desc": "A React based web application for Virginia Tech students that acts as an organizational and social tool for students and professors.",
     "buttons": {
       "demo": "https://www.youtube.com/playlist?list=PL7rRfcJDHzQUdjniKR3nRdy3l8wkObn4F"
     },
-    "tools": ["react", "python"]
+    "tools": ["react", "javascript", "python"]
   },
   {
     "title": "Type-Two",
