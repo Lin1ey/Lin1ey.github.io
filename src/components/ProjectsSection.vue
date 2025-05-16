@@ -11,8 +11,11 @@
                     <img :src='getProjectImage(project.title, project.image)' :alt="project.title" />
                 </div>
                 <div class="project-bottom">
-                    <h1>{{ project.title }}</h1>
-                    <p>{{ project.desc }}</p>
+                    <div class="project-text">
+                        <h1>{{ project.title }}</h1>
+                        <br/>
+                        <p>{{ project.desc }}</p>
+                    </div>
                     <div class="project-tools">
                         <ul>
                             <li v-for="(tool, index) in project.tools" :title="utils.capitalizeFirstLetter(tool)"><img
@@ -124,7 +127,7 @@ section {
 .project-bottom {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 8px;
     text-align: center;
     padding: 24px;
     line-height: 1.5rem;
